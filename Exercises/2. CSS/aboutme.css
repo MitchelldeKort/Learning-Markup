@@ -1,4 +1,46 @@
-{
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?6fr7sx');
+  src:  url('fonts/icomoon.eot?6fr7sx#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?6fr7sx') format('truetype'),
+    url('fonts/icomoon.woff?6fr7sx') format('woff'),
+    url('fonts/icomoon.svg?6fr7sx#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-github:before {
+  content: "\eab0";
+}
+.icon-linkedin2:before {
+  content: "\eaca";
+}
+.icon-stackoverflow:before {
+  content: "\ead0";
+}
+
+
+
+
+
+
+*{
 margin: 0;
 padding: 0;
 }
@@ -8,12 +50,12 @@ color: #2f3542;
 font-family: 'Open Sans', sans-serif;
 font-size: 16px;
 font-weight: normal;
-
-header {
-position: relative;
-height: 100vh;
-background: url(germansheperd.jpg);
-display: flex;
+}
+header{
+position: relative;height: 100vh;
+background: url(germanshepard.jpg) no-repeat;
+background-size: cover;
+display:flex ;
 flex-flow: column nowrap;
 align-items: center;
 justify-content: center;
@@ -51,7 +93,7 @@ border-radius: 100%;
 background-image: url(ik.jpg);
 background-position: center;
 background-size: 100% 100%;
-transition: background-size 0.5../img/ava.jpgs ease;
+transition: background-size 0.5../germansheperd.jpg ease;
 -o-transition: background-size 0.5s ease;
 -ms-transition: background-size 0.5s ease;
 -moz-transition: background-size 0.5s ease;
@@ -86,14 +128,57 @@ color: #2ed573;
 font-size: 1.8rem;
 text-transform: uppercase;
 letter-spacing: 4px;
-text-shadow: 2px 2px 5px #000000;
-}
+text-shadow: 2px 2px 5px #000000;}
 
 .quote {
 color: #dfe4ea;
 font-size: 0.9rem;
-text-shadow: 2px 2px 5px #000000;
-}
+text-shadow: 2px 2px 5px #000000;}
 
 .quote em {
-font-weight: bold;
+font-weight: bold;}
+
+
+tr:nth-child(even) {
+  background-color: #f2f2f2}
+
+td:hover {
+  background-color: green;}
+
+td :first-letter {
+  font-size: 700%;}
+
+  .footer {
+  height: 150px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  }
+
+  .links li {
+  margin: 0 200px;
+  display: inline-block;
+  }
+
+  .links li:first-child {
+  margin-left: 0;
+  }
+
+  .links li:last-child {
+  margin-right: 0;
+  }
+
+  .links li:first-child::before, .links li:last-child::after {
+  content: "|"
+  }
+
+  .links a {
+  margin: 0 10px;
+  color: #2f3542;
+  font-size: 1.5rem;
+  }
+
+  .links a:hover {
+  color: #2ed573;
+  }
