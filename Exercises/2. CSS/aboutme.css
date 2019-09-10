@@ -1,0 +1,99 @@
+{
+margin: 0;
+padding: 0;
+}
+body {
+background: #dfe4ea;
+color: #2f3542;
+font-family: 'Open Sans', sans-serif;
+font-size: 16px;
+font-weight: normal;
+
+header {
+position: relative;
+height: 100vh;
+background: url(germansheperd.jpg);
+display: flex;
+flex-flow: column nowrap;
+align-items: center;
+justify-content: center;
+}
+
+.header::before {
+position: absolute;
+display: block;
+width: 100%;
+height: 100%;
+content: "";
+background: black;
+opacity: 0.77;
+}
+
+.pic-container, .name, .quote {
+z-index: 1;
+}
+
+.pic-container {
+position: relative;
+width: 200px;
+height: 200px;
+text-align: center;
+line-height: 200px;
+cursor: pointer;
+border: 5px solid #dfe4ea;
+border-radius: 100%;
+}
+
+.pic {
+width: 200px;
+height: 200px;
+border-radius: 100%;
+background-image: url(ik.jpg);
+background-position: center;
+background-size: 100% 100%;
+transition: background-size 0.5../img/ava.jpgs ease;
+-o-transition: background-size 0.5s ease;
+-ms-transition: background-size 0.5s ease;
+-moz-transition: background-size 0.5s ease;
+-webkit-transition: background-size 0.5s ease;
+z-index: -1;
+}
+
+.pic-container:hover .pic {
+position: absolute;
+background-size: 125% 125%;
+filter: blur(2px);
+-o-filter: blur(2px);
+-ms-filter: blur(2px);
+-moz-filter: blur(2px);
+-webkit-filter: blur(2px);
+}
+
+.pic-container .age {
+display: none;
+color: #dfe4ea;
+font-size: 5rem;
+text-shadow: 0px 0px 8px #000000;
+}
+
+.pic-container:hover .age {
+display: block;
+}
+
+.name {
+margin: 15px 0 5px 0;
+color: #2ed573;
+font-size: 1.8rem;
+text-transform: uppercase;
+letter-spacing: 4px;
+text-shadow: 2px 2px 5px #000000;
+}
+
+.quote {
+color: #dfe4ea;
+font-size: 0.9rem;
+text-shadow: 2px 2px 5px #000000;
+}
+
+.quote em {
+font-weight: bold;
