@@ -1,0 +1,70 @@
+
+.container-hoofd {
+  display: grid;
+  grid-template-columns: 50px 640px;
+  grid-template-rows: 50px 640px;
+  justify-content: center;
+}
+
+.letters {background-color: lightgrey;
+grid-column:2 / 3 ;
+grid-row:1 / 2 ;
+display:flex;
+flex-direction:row;
+ align-items: center;
+justify-content: space-around;}
+
+.nummers {background-color: lightgrey;
+grid-column:1 / 2 ;
+grid-row: 2 / 3 ;
+display: flex;
+flex-direction: column-reverse;
+align-items: center;
+justify-content: space-around;
+}
+
+
+
+.chessboard {
+    width: 640px;
+    height: 640px;
+    background-image: url("tile.png");
+    background-size: 160px , 160px ;
+    grid-column:2 / 3 ;
+    grid-row: 2 / 3 ;
+    display: grid;
+    grid-template-columns: repeat(8 , 80px);
+    grid-template-rows: repeat(8 , 80px);
+    grid-template-areas:
+"A8 B8 C8 D8 E8 F8 G8 H8"
+"A7 B7 C7 D7 E7 F7 G7 H7"
+"A6 B6 C6 D6 E6 F6 G6 H6"
+"A5 B5 C5 D5 E5 F5 G5 H5"
+"A4 B4 C4 D4 E4 F4 G4 H4"
+"A3 B3 C3 D3 E3 F3 G3 H3"
+"A2 B2 C2 D2 E2 F2 G2 H2"
+"A1 B1 C1 D1 E1 F1 G1 H1";
+justify-items: center;
+align-items: center;}
+
+
+.chessboard div{
+font-size:50px;}
+
+#pion1-wit{
+    grid-area : A2 ;}
+#pion2-wit{grid-area: B2;}
+#pion3-wit {grid-area: C2;}
+#pion4-wit{grid-area: D2;}
+#pion5-wit{grid-area: E2;}
+#pion6-wit{grid-area: F2;}
+#pion7-wit{grid-area: G2;}
+#pion8-wit{grid-area: H2;}
+#toren1-wit{grid-area: A1;}
+#toren2-wit{grid-area: H1;}
+#paard1-wit{grid-area: B1;}
+#paard2-wit{grid-area: G1;}
+#loper1-wit{grid-area: C1;}
+#loper2-wit{grid-area: F1;}
+#koningin-wit{grid-area: D1;}
+#koning-wit{grid-area: E1}
