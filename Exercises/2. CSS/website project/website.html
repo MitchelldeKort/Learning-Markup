@@ -4,43 +4,107 @@
     <meta charset="UTF-8">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
         <style>
             * {
                 box-sizing: border-box;
               }
-              .flexbox1 {
-                  display: flex;
-                  flex-direction: row;
-                  background-color: rgba(10, 9, 9, 0.829);
-                  justify-content: space-between;
-                  justify-items: center;
-                  height: 140px ;
-                  }
-              .search2.png{
-                  background-color: black;
-                  width: 70px;
-                  height: 70px;
-              }
+              .navbar {
+                list-style-type: none;
+                overflow: hidden;
+                background-color: #333;
+                position: fixed;
+                display: flex ;
+                height: 140px ;
+                width: 1260px ;
+                align-content: align-self, auto; 
+                justify-content: space-between ;
+                
+                }
+                
+                .navbar > div {
+                    text-align: center ;
+                line-height: 100px ;
+                text-size-adjust: 70px ;
 
-              .header {}
-        </style>
-           <div class="flexbox1">
-            <div><img src="logo.inline.svg_xml" alt="logo"></div>
-            <div>products</div>
-            <div>about</div>
-            <div>news</div>
-            <div>store</div>
-            <div><img src="search2.png" alt="search"></div>
-            <div><img src="icon.facebook.png" alt="facebook"></div>
-            <div><img src="icon.twitter.png" alt="twitter"></div>
-            <div><img src="icon.youtube.png" alt="youtube"></div>
-            <div><img src="icon.instagram.png" alt="instagram"></div>
-        </div>
-    </head>
-    <header><img src="babysharkdodo.jpg" alt="babyshark"></header>
-    <body>
-       
+
+                }
+               
+               
+               .footer {
+                   display: flex;
+                   height: 140px;
+                   width: 100%;
+                   background-color: lightgreen;
+                   border: 2px, solid, red;
+                   }
+    
+                .left { 
+                    display: flex;
+                    width: 50%;
+                    flex-direction: row;
+                    justify-content: center;
+                }
         
+                .right {
+                    display: flex;
+                    width: 50%;
+                    flex-direction: row;
+                    justify-content: center;
+                }
+        </style>
+        
+       
+    </head>
+  
+    <body>
+     
+        <header>
+            <div class="navbar">
+                <div><img src="logo.inline.svg_xml" alt="logo"></div>
+                <div>products</div>
+                <div>about</div>
+                <div>news</div>
+                <div>store</div>
+                <div><li><img src="" alt="search"></li></div>
+                <div><img src="icon.facebook.png" alt="facebook"></div>
+                <div><img src="icon.twitter.png" alt="twitter"></div>
+                <div><img src="icon.youtube.png" alt="youtube"></div>
+                <div><img src="icon.instagram.png" alt="instagram"></div>
+                </div>
+        </header>
+
+       <img src="babysharkdodo.jpg" alt="babysharkdodo">
+        <div class="main">
+
+        </div>
+        
+        <div class="gridphotos">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        
+        <footer class="footer">
+            <div class="leftf">
+                <div></div>
+                <div><p>Where to buy</p></div>
+                <div>CONTACT</div>
+                <div>SUPPORT</div>
+                <div>WARRANTY</div>
+                <div>PRIVACY</div>
+                <div>LEGAL</div>
+                <div>CAREERS</div>
+                <div>© 2019 WowWee Group Limited. All Rights Reserved.</div>
+            </div>
+
+            <div class="rightf">
+
+            </div>            
+        </footer>
+    
     </body>
-    <footer></footer>
+
 </html>
