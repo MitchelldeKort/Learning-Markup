@@ -1,17 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-    <title>WowWee® - Astonishing Imagination</title>
-    <meta charset="UTF-8">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.">
+        <title>WowWee® - Astonishing Imagination</title>     
         <style>
-            * {
-                box-sizing: border-box;
-              }
-              .navbar {
+            
+          
+
+            
+
+            .main{
+                    display: flex;
+                    flex-direction: column;
+                }
+
+            .section-img{
+                width: 100%;
+            }
+                
+            .navbar {
                 list-style-type: none;
-                overflow: hidden;
                 background-color: #333;
                 position: fixed;
                 display: flex ;
@@ -19,41 +28,234 @@
                 width: 1260px ;
                 align-content: align-self, auto; 
                 justify-content: space-between ;
-                
-                }
-                
-                .navbar > div {
-                    text-align: center ;
+              }
+                    
+            .navbar > div {
+                text-align: center ;              
                 line-height: 100px ;
-                text-size-adjust: 70px ;
+                text-size-adjust: 100px ;
+                color: lightgray ;
+                font-style: oblique ;
+                font-weight: 500 ;}
+                
+            .gridphotos{
+                    display: flex ;
+                    text-align: center ;
+                    justify-content: space-around ;
+                    flex-wrap : nowrap ;}
+                    
+                    .button-3{
+                    background-color: white;
+                    color: rgb(37, 37, 158);
+                    padding: 10px 15px;
+                    border: 2px solid;
+                    border-radius: 25px;
+                    width: 160px;
+                    margin: 50px;
+                    margin-left: auto;
+                    margin-right: auto;}
+
+                    .buttons {
+                        display: flex ;
+                        text-align: center;
+                        justify-content: space-around;
+                        flex-wrap: nowrap;
+                    }
+
+                    .div > h2 {
+                        background-size: cover;
+                        text-align: center;
+                        color: rgb(41, 41, 163);
+                        text-shadow: 5px 10px 5PX grey;
+                        font-size: 60px;
+                        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                        } 
+                      
 
 
-                }
-               
-               
-               .footer {
-                   display: flex;
-                   height: 140px;
-                   width: 100%;
-                   background-color: lightgreen;
-                   border: 2px, solid, red;
-                   }
+              
+                      
+                        
+                    
+
+                  
+
+                    
+
+                    .container > h1 {
+                        background-size: cover;
+                        text-align: center;
+                        color: rgb(41, 41, 163);
+                        text-shadow: 5px 10px 5PX grey;
+                        font-size: 60px;
+                        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                        } 
+
+                        .container {
+                            flex-wrap: nowrap ;
+                            justify-content: center ;
+                            align-content: center ;
+                            display: flex ;
+                        }
+
+            .tech-to-toys{
+                display: flex;
+                justify-content: column;
+                background-color: #333;
+            }
+
+            .dark-left {
+                width: 50%;
+            }
+
+            .find-out-more-button {
+                background-color: #333;
+                font-size: 24px;
+                border-radius: 24px;
+                color: #008CBA;
+                border:1px solid #008CBA;
+            }
+
+            .find-out-more-button:hover{
+                background-color: #008CBA;
+                color:white;
+            }
+
+            .dark-right {
+                width: 50%;
+            }
+            
+            .dark-right-img{
+                width: 550px;
+                height: 600px;
+            }
+        
+        
+            .footer {
+                display: flex;
+                height: 160px;
+                width: 100%;
+                color: white;
+                justify-content: space-around;
+                background-color: #333;
+            }
+            /*footer leftpart*/
+            .leftf { 
+                display: flex;
+                width:40%;
+                flex-direction:column;
+            
+            }
+
+            .leftf-1 {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                height: 100px;
+                justify-content: start;
+                align-items: center;
+            }
+
+            .footerlogo{
+                width:150px;
+                height:120px;
+                margin-right: 50px;
+            }
+
+         /*botton: where to buy*/
+            .button-wtb {
+                background-color: #008CBA;
+                font-size: 24px;
+                border-radius: 24px;
+                color: white;
+                border:none;
+            }
+
+            .button-wtb:hover{
+                background-color: white;
+                color:#008CBA;
+            }
+
+            /* leftpart: row 2*/
+            .leftf-2 {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                justify-content: space-around;
+            }
+
+            .leftf-2 > a {
+                color: white;
+                text-decoration: none;
+                font-size: 15px;
+            }
+
+            .leftf-2 > a:hover {
+                color: #008CBA;
+            }
+
+            .copyright{
+                margin: 10px;
+                padding: 10px;
+                font-size: 12px;
+            }
     
-                .left { 
-                    display: flex;
-                    width: 50%;
-                    flex-direction: row;
-                    justify-content: center;
-                }
+            /*footer rightpart*/
+            .rightf {
+                display: flex;
+                width: 40%;
+                flex-direction: column;
+                justify-content: start;
+            }  
+
+            .rightf-1{
+                color:#008CBA;
+                font-size: 20px;
+                height:25px;
+                
+            }
+
+            .rightf-2{
+                color:white;
+                font-size: 15px;
+                padding: 0;
+            }
+
+            .rightf-3{
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
         
-                .right {
-                    display: flex;
-                    width: 50%;
-                    flex-direction: row;
-                    justify-content: center;
-                }
-        </style>
-        
+            }
+
+            input[type=email] {
+                height: 40px;
+                width: 400px;
+                background-color: gray;
+                border: none;
+                margin-right: 10px;
+            }
+
+            ::placeholder {
+                color: white;
+            }
+
+            button[type=submit] {
+                height: 40px;
+                border-radius: 24px;
+                width: 150px;
+                background-color: #333;
+                border: 1px solid white;
+                color: white;
+                font: bold;
+            }
+
+            .agecheck{
+                font-size: 12px;
+                padding-top: 15px;
+            }
+
+        </style>      
        
     </head>
   
@@ -61,12 +263,14 @@
      
         <header>
             <div class="navbar">
-                <div><img src="logo.inline.svg_xml" alt="logo"></div>
+
+                <div><img src="logowhite-2.svg" alt="logo" style="width:150px; height:120px;"></div>
                 <div>products</div>
                 <div>about</div>
                 <div>news</div>
                 <div>store</div>
-                <div><li><img src="" alt="search"></li></div>
+                <div><textarea rows="1" cols="25"></textarea></div>
+                <div><img src="icon.search.gray.png" alt="search"></div>
                 <div><img src="icon.facebook.png" alt="facebook"></div>
                 <div><img src="icon.twitter.png" alt="twitter"></div>
                 <div><img src="icon.youtube.png" alt="youtube"></div>
@@ -74,34 +278,105 @@
                 </div>
         </header>
 
-       <img src="babysharkdodo.jpg" alt="babysharkdodo">
+    
         <div class="main">
 
-        </div>
-        
-        <div class="gridphotos">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        
-        <footer class="footer">
-            <div class="leftf">
-                <div></div>
-                <div><p>Where to buy</p></div>
-                <div>CONTACT</div>
-                <div>SUPPORT</div>
-                <div>WARRANTY</div>
-                <div>PRIVACY</div>
-                <div>LEGAL</div>
-                <div>CAREERS</div>
-                <div>© 2019 WowWee Group Limited. All Rights Reserved.</div>
+            <img clss="section-img" src="babysharkdodo.jpg" alt="babysharkdodo">
+
+            <div class="product-catergory">
+                    <div class="container">
+                            <div><img src="line.heading.left.png" alt="left"></div>
+                            <h1 class="section heading">Product Categories</h1>
+                            <div><img src="line.product_splitter.png" alt="splitter"></div>
+                    </div>
+                    <div class="gridphotos">
+                            <figure>
+                            <div><img src="fingerlings.png" alt="fingerlings"></div>
+                            <figcaption><h1>Fingerlings</h1></figcaption>
+                            </figure>
+                            <figure>
+                            <div><img src="untamed.png" alt="untamed"></div>
+                            <figcaption><h1>Untamed</h1></figcaption>
+                            </figure>
+                            <figure>
+                            <div><img src="+more1.png" alt="+more1"></div>
+                            <figcaption><h1>+More</h1></figcaption>
+                            </figure>
+                     </div>
+                
+                    <div class="buttons">
+                                        <input class= "button-3" type="submit" value="FIND OUT MORE" name= " ">
+                                        <input class= "button-3" type="submit" value="FIND OUT MORE" name= " ">
+                                        <input class= "button-3" type="submit" value="FIND OUT MORE" name= " ">
+                    </div>
+                    <div><h2>View All Categories</h2></div>
+                    <div class="extrabutton">
+                            <input class= "button-3" type="submit" value="FIND OUT MORE" name= " ">
+                    </div>
+                    </div>
             </div>
 
-            <div class="rightf">
+            <div class="tech-to-toys">
+                    
+                <div class="dark-left">
+                    <div class="dark-3-text">
+                        <p>WOWWEE LABS</p>
+                        <h1>BRINGING TECH TO TOYS</h1>
+                        <p>Explore our history including technology innovations and product launch highlights dating back to the original Robosapien. Learn more about how we innovate and view concept sketches and prototypes for some of our latest products. Access our free SDKs to develop your own apps to control our products.</p>
+                    </div>
+                    <div class="dark-button">
+                        <button class="find-out-more-button" type="button">FIND OUT MORE</button>
+                    </div>
+                </div>
+                <div class="dark-right">
+                    <img class="dark-right-img" src="techtotoys.png" alt="tech to toys">
+                </div>
+            </div>
 
+            <div class="featured-product">
+
+            </div>
+
+            <div class="news">
+
+            </div>
+
+        </div>
+
+
+
+
+        
+        <footer class="footer">
+        <div class="leftf">
+            <div class="leftf-1">
+                <img class="footerlogo" src="logowhite-2.svg" alt="logo">
+                <a href="https://wowwee.com/where-to-buy"><button class="button-wtb" type="button">Where to buy</button></a>
+                </div>
+                
+            <div class="leftf-2"> 
+                <a href="https://wowwee.com/contact">CONTACT</a>
+                <a href="https://support.wowwee.com/hc/en-us">SUPPORT</a>
+                <a href="https://wowwee.com/information/warranty">WARRANTY</a>
+                <a href="https://wowwee.com/information/privacy">PRIVACY</a>
+                <a href="https://wowwee.com/information/legal">LEGAL</a>
+                <a href="https://wowwee.com/careers">CAREERS</a>
+                </div>
+            <div class="copyright">© 2019 WowWee Group Limited. All Rights Reserved.</div>
+        </div>
+
+        <div class="rightf">
+            <div class="rightf-1"><p>WANT WOWWEE UPDATES AND OFFERS?</p></div>
+            <div class="rightf-2"><p>We'll send you WowWee news, product announcements and special offers.</p></div>
+            <div class="rightf-3">
+                <div><input type="email" name="email" placeholder="Your email address" class="mail-signup-input__field"></div>
+                <div><button class="mail-signup-input__button" type="submit">Sign Up</button></div>
+            </div>
+            <div>
+                <label class="agecheck"><input type="checkbox" name="allowed_age" value="1">
+                        &nbsp;&nbsp;&nbsp;I am over 13 years old
+                </label>
+            </div>
             </div>            
         </footer>
     
