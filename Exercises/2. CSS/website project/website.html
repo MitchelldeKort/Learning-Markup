@@ -2,13 +2,27 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1.">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="HandheldFriendly" content="true">
         <title>WowWee® - Astonishing Imagination</title>     
         <style>
-            
-          
 
-            
+      /* Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+/* Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+.img { max-width: 100%; }
+
+@media (min-width: 640px) { body {font-size:1rem;} } 
+@media (min-width:960px) { body {font-size:1.2rem;} } 
+@media (min-width:1100px) { body {font-size:1.5rem;} }
 
             .main{
                     display: flex;
@@ -17,6 +31,7 @@
 
             .section-img{
                 width: 100%;
+                background-size: contain;
             }
                 
             .navbar {
@@ -25,9 +40,9 @@
                 position: fixed;
                 display: flex ;
                 height: 140px ;
-                width: 1260px ;
+                width: 99%;
                 align-content: align-self, auto; 
-                justify-content: space-between ;
+                justify-content: space-evenly;
               }
                     
             .navbar > div {
@@ -36,14 +51,29 @@
                 text-size-adjust: 100px ;
                 color: lightgray ;
                 font-style: oblique ;
-                font-weight: 500 ;}
-                
+                font-weight: 500 ;
+                }
+            
+            @media (min-width: 320px and max-width: 480;) {
+                .nav-icons {
+                    display: none;
+                }
+            }
+              @media (min-width: 320px and max-width: 480;) {
+                  .gridphotos{
+                      flex-direction: column;
+                  }
+              }
+                  
+              
             .gridphotos{
                     display: flex ;
                     text-align: center ;
                     justify-content: space-around ;
-                    flex-wrap : nowrap ;}
-                    
+                    flex-wrap : wrap ;}
+
+                
+              
                     .button-3{
                     background-color: white;
                     color: rgb(27, 27, 148);
@@ -54,6 +84,7 @@
                     margin: 50px;
                     margin-left: auto;
                     margin-right: auto;}
+              
 
                     .buttons {
                         display: flex ;
@@ -77,6 +108,15 @@
                             color: lightblue;
                             border-radius: 25px;}
                     
+                         @media (min-width: 320 px and max-width: 480;) {
+                             .container{
+                                 display: flex;
+                                 flex-wrap: wrap;
+                                 flex-direction: column;
+                             }
+                         }
+
+
                      .container > h1 {
                         background-size: cover;
                         text-align: center;
@@ -91,28 +131,78 @@
                             justify-content: center ;
                             align-content: center ;
                             display: flex ;}
+ 
+                        .featured-product {
+                            text-align: center;
+                            font-size: 35px;
+                            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                        }
+
+                            .featured-product > h1{
+                                text-align: center;
+                                color: rgb(41, 41, 163);
+                                text-shadow: 5px 10px 5PX grey;
+                                font-size: 60px;
+                                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+                            }
 
 
                             .featured-container{
                                 display: flex;
-                                justify-content: center;
+                                justify-content: space-around;
                                 flex-direction: row;
                                 flex-wrap: nowrap;
-                                
-                            }
+                                }
+
+                        .featuredbottomtxt{
+                            display: flex;
+                            justify-content: space-around;
+                            flex-direction: row;
+                            flex-wrap: nowrap;
+                        }
+
+                        .lines{
+                            display: flex;
+                            justify-content: space-around;
+                            flex-direction: row;
+                            flex-wrap: nowrap;
+                        }
                       
+                      .B{
+                          display: flex;
+                          justify-content: space-evenly;
+                          align-items: center;
+                          flex-wrap: nowrap;
+                          text-align: center;
+                          font-size: 10px;
+                          padding : 10 px;
+
+                      }
+
+                      .buttonproduct{
+                          display: flex;
+                          flex-direction: row;
+                          justify-content: space-evenly;
+                          align-items: center;
+                          flex-wrap: nowrap;
+                          
+                      }
                         
                         
     /*dark section*/
             .tech-to-toys{
                 display: flex;
-                justify-content: column;
+                justify-content: space-around;
+                flex-direction: row;
                 background-color: #333;
-                background-image: url('darkbackground.png');
+                width:100%;
+                background-image: url('/resources/darkbackground.png');
+                background-size: 100% 100%;
             }
 
             .dark-left {
-                width: 50%;
+                flex: 50%;
                 display: flex;
                 flex-direction: column;
             }
@@ -120,7 +210,7 @@
             .dark-text-1{
                 color: white;
                 font:bold;
-                font-size: 24px;
+                font-size: 2vm;
                 padding-left: 40px;
                 padding-top: 100px;
                 margin:0;
@@ -129,7 +219,7 @@
             .dark-text-2{
                 color: #008CBA;
                 font:bold;
-                font-size: 75px;
+                font-size: 8vw;
                 padding-left: 40px;
                 margin:0;
             }
@@ -137,7 +227,7 @@
             .dark-text-3{
                 color: white;
                 font:bold;
-                font-size: 20px;
+                font-size: 1.5vw;
                 padding-left: 40px;
             }
             
@@ -151,6 +241,7 @@
                 color: #008CBA;
                 border:1px solid #008CBA;
                 margin-left: 40px;
+            
             }
 
             .find-out-more-button:hover{
@@ -159,12 +250,14 @@
             }
 
             .dark-right {
-                width: 50%;
+                flex: 50%;
+                height: auto;
+                text-align: center;
             }
             
             .dark-right-img{
-                width: 550px;
-                height: 600px;
+                width: 50vw;
+                height: 60vw;
             }
             
     /*news section*/
@@ -179,7 +272,7 @@
 
             .news-container > img{
                 width: 100%;
-                
+                height: auto;
             }
             
             .news-heading {
@@ -255,6 +348,10 @@
                 float: right;
                 padding: 10px 20px;
             }
+
+            .news-img{
+                width: 100%;
+            }
         
     /*footer*/
             .footer {
@@ -278,7 +375,7 @@
                 flex-direction: row;
                 width: 100%;
                 height: 100px;
-                justify-content: start;
+                justify-content: space-around;
                 align-items: center;
             }
 
@@ -290,8 +387,9 @@
 
          /*botton: where to buy*/
             .button-wtb {
-                background-color: #008CBA;
-                font-size: 24px;
+                background-color: #008CBA;  
+                height:40px;
+                width:150px;
                 border-radius: 24px;
                 color: white;
                 border:none;
@@ -331,32 +429,45 @@
                 display: flex;
                 width: 40%;
                 flex-direction: column;
-                justify-content: start;
+                
             }  
 
             .rightf-1{
                 color:#008CBA;
-                font-size: 20px;
+                font-size: 15px;
                 height:25px;
-                
+                width: 100%;
+                padding-left:20px;
             }
 
             .rightf-2{
                 color:white;
                 font-size: 15px;
                 padding: 0;
+                width: 100%;
+                padding-left:20px;
             }
 
             .rightf-3{
                 display: flex;
                 flex-direction: row;
-                justify-content: start;
-        
+                justify-content: space-around;
+                width: 100%;
+                
+            }
+
+            .rightf-email{
+                width:60%;
+            }
+
+            .rightf-submit{
+                width:40%;
+                
             }
 
             input[type=email] {
                 height: 40px;
-                width: 400px;
+                width: 100%;
                 background-color: gray;
                 border: none;
                 margin-right: 10px;
@@ -369,17 +480,63 @@
             button[type=submit] {
                 height: 40px;
                 border-radius: 24px;
-                width: 150px;
+                width: 100px;
                 background-color: #333;
                 border: 1px solid white;
                 color: white;
                 font: bold;
+                
             }
 
             .agecheck{
-                font-size: 12px;
-                padding-top: 15px;
+                padding-left: 20px;
+                font-size: 15px;
             }
+
+/*media query*/
+            @media (min-width: 320px) and (max-width: 480px) {
+               
+                .news-1{
+                    grid-column:  1 / 4;
+                }
+
+                .news-2{
+                    grid-area:  3 / 1 / 4 / 3;
+                }
+
+                .news-3{
+                    grid-column: 3 / 4;
+                }
+                
+                .news-4, .news-5{
+                    display:none;
+                }
+
+                .footer{
+                    flex-direction: column-reverse;
+                    height: auto;
+                }
+
+                .leftf-2 {
+                    flex-direction: column;
+                    justify-content: space-around;
+                }
+
+                .rightf {
+                    width: 100%;
+                }
+                
+                .leftf {  
+                   width:100%;
+                }
+
+                
+
+
+            }
+
+
+
 
         </style>      
        
@@ -390,42 +547,42 @@
         <header>
             <div class="navbar">
 
-                <div><img src="logowhite-2.svg" alt="logo" style="width:150px; height:120px;"></div>
+                <div><img src="/resources/logo.inline.svg" alt="logo" style="width:150px; height:120px;"></div>
                 <div>products</div>
                 <div>about</div>
                 <div>news</div>
                 <div>store</div>
-                <div><textarea rows="1" cols="25"></textarea></div>
-                <div><img src="icon.search.gray.png" alt="search"></div>
-                <div><img src="icon.facebook.png" alt="facebook"></div>
-                <div><img src="icon.twitter.png" alt="twitter"></div>
-                <div><img src="icon.youtube.png" alt="youtube"></div>
-                <div><img src="icon.instagram.png" alt="instagram"></div>
+                <div><textarea rows="1" cols="15"></textarea></div>
+                <div><img src="/resources/icon.search.gray.png" alt="search"></div>
+                <div class="nav-icons"><img src="/resources/icon.facebook.png" alt="facebook"></div>
+                <div class="nav-icons"><img src="/resources/icon.twitter.png"  alt="twitter"></div>
+                <div class="nav-icons"><img src="/resources/icon.youtube.png"  alt="youtube"></div>
+                <div class="nav-icons"><img src="/resources/icon.instagram.png" alt="instagram"></div>
                 </div>
         </header>
 
     <!--main body--> 
         <div class="main">
 
-            <img clss="section-img" src="babysharkdodo.jpg" alt="babysharkdodo">
+            <img clss="section-img" src="/resources/babysharkdodo.jpg" alt="babysharkdodo">
 
             <div class="product-catergory">
                     <div class="container">
-                            <div><img src="line.heading.left.png" alt="left"></div>
+                            <div><img src="/resources/line.heading.left.png" alt="left"></div>
                             <h1 class="section heading">Product Categories</h1>
-                            <div><img src="line.product_splitter.png" alt="splitter"></div>
+                            <div><img src="/resources/line.product_splitter.png" alt="splitter"></div>
                     </div>
                     <div class="gridphotos">
                             <figure>
-                            <div><img src="aap.png" alt="fingerlings"></div>
+                            <div><img src="/resources/fingerlings.png" alt="fingerlings"></div>
                             <figcaption><h1>Fingerlings</h1></figcaption>
                             </figure>
                             <figure>
-                            <div><img src="untamed.png" alt="untamed"></div>
+                            <div><img src="/resources/untamed.png" alt="untamed"></div>
                             <figcaption><h1>Untamed</h1></figcaption>
                             </figure>
                             <figure>
-                            <div><img src="+more1.png" alt="+more1"></div>
+                            <div><img src="/resources/+more.png" alt="+more1"></div>
                             <figcaption><h1>+More</h1></figcaption>
                             </figure>
                      </div>
@@ -443,6 +600,7 @@
                     </div>
                     </div>
             </div>
+            
             <div class="tech-to-toys">      
                 <div class="dark-left">
                     <div class="dark-3-text">
@@ -455,7 +613,7 @@
                     <a href="https://wowwee.com/about/landing"><button class="find-out-more-button" type="button">FIND OUT MORE</button></a>
                 </div>
                 <div class="dark-right">
-                    <img class="dark-right-img" src="techtotoys.png" alt="tech to toys">
+                    <img class="dark-right-img" src="/resources/robot.png" alt="tech to toys">
                 </div>
             </div>
 
@@ -463,47 +621,46 @@
 
 
             <div class="featured-product">
+                <div class="C">
                 <div class="section header-pre">The Latest & Greatest</div>
+                </div>
                 <h1 class="section header">Featured Products</h1>
             </div>
         <div class="featured-container">
-            <div><img src="whatsthatsmell.jpg" alt="whatsthatsmell" width="200px" height="200px"></div>
-            <div><img src="" alt="what" width="200px" height="200px"></div>
+            <div><img src="/resources/whatsthatsmell.jpg" alt="whatsthatsmell" width="200px" height="200px"></div>
+            <div><img src="/resources/alive.png" alt="alive" width="200px" height="200px"></div>
+            <div><img src="/resources/babyshark.png" alt="babyshark" width="200px" height="200px"></div>
+        </div>    
+              
+            <div class="featuredbottomtxt">
+                    <div><img src="/resources/what.svg" alt="what" width="200px" height="200px"></div>
+                    <div><img src="/resources/alivetxt.svg" alt="alivetxt" width="200px" height="200px"></div>
+                    <div><img src="/resources/babysharktxt.svg" alt="babysharktxt" width="200px" height="200px"></div>
+            </div>
             
-            <div><img src="alive.png" alt="alive" width="200px" height="200px"></div>
-            <div><img src="alivetxt.png" alt="alivetxt" width="200px" height="200px"></div>
-           
-            <div><img src="babyshark.png" alt="babyshark" width="200px" height="200px"></div>
-            <div><img src="pastedalive.png" alt="babysharktxt" width="200px" height="200px"></div>
-            
-        </div>
+        
             <div class="lines">
-                    <div><img src="" alt="splitter" width="200px" height="200px"></div>
-                    <div><img src="" alt="splitter" width="200px" height="200px"></div>
-                    <div><img src="" alt="splitter" width="200px" height="200px"></div>
+                    <div><img src="/resources/line.product_splitter.png" alt="splitter"></div>
+                    <div><img src="/resources/line.product_splitter.png" alt="splitter"></div>
+                    <div><img src="/resources/line.product_splitter.png" alt="splitter"></div>
             </div>
             
             
             <div class="B">
-                    <h1>Coming August 2018: The Party Game That Stinks!
-                          What’s That Smell?™ is the hilariously fragrant new scratch 'n sniff guessing game that throws your sense of smell into overdrive!</h1>
-                  </div>
-                  <div class="B">
-                        <h1>Playing with your cub is like having a real baby animal to take care of and nurture. Alive Cubs react with baby animal sounds and facial animations when you stroke his head or cradle him in your arms.</h1>
-                    </div>
-                    <div class="button2">
-            <div class="B">
-                <h1>Meet the famous Shark Family singing plush dolls, cubes, and dancing doll. You won't be able to cuddle them
+                <div class="txt1"><h1>Coming August 2018: The Party Game That Stinks!
+                          What’s That Smell?™ is the hilariously fragrant new scratch 'n sniff guessing game that throws your sense of smell into overdrive!</h1></div>
+                  
+                        <div class="txt2"><h1>Playing with your cub is like having a real baby animal to take care of and nurture. Alive Cubs react with baby animal sounds and facial animations when you stroke his head or cradle him in your arms.</h1></div>
+                   <div class="txt3"><h1>Meet the famous Shark Family singing plush dolls, cubes, and dancing doll. You won't be able to cuddle them
                     enough! Have fun stacking the song cubes, cuddling with your favorite song doll, or dancing with the Baby Shark
-                    Dancing Doll to the hit Baby Shark song!</h1>
+                    Dancing Doll to the hit Baby Shark song!</h1></div>
             </div>
-            <div class="button3">
-                <input class="button-3" type="submit" value="FIND OUT MORE" name=" ">
+
+
+            <div class="buttonproduct">
+                <input class= "button-3" type="submit" value="FIND OUT MORE" name=" ">
                 <input class= "button-3" type="submit" value="FIND OUT MORE" name= " ">
-            </div>
-            </div>
-            <div class="button1">
-                    <input class= "button-3" type="submit" value="FIND OUT MORE" name= " ">
+                <input class= "button-3" type="submit" value="FIND OUT MORE" name= " ">
             </div>
         
 
@@ -515,44 +672,44 @@
                     <p>NEWS</p>
                 </div>
                 <div class="news-1">
-                   <img src="luck.png" alt="luck">
+                   <img class="news-img" src="/resources/luck.png" alt="luck">
                    <p class="news-title">KIDS THESE DAYS GET ALL THE LUCK. (LITERALLY.)</p>
                    <p class="news-subtitle">Kids these days get all the luck. (Literally.) Lucky Fortune Bracelets From WowWee Are The Sweetest Surprise Accessory.</p>
                    <div class="articles-grid__item__meta">
                         Alison Kresta on Apr 10 / <a href="https://www.romper.com/p/lucky-fortune-bracelets-from-wowwee-are-the-sweetest-surprise-accessory-exclusive-16995282" target="_blank">Romper</a> </div>
-                        <a href="/news/in-the-news/kids-these-days-get-all-the-luck-literally" class="btn btn--blank btn--read-more btn--pull-right">Read More</a>
+                        <a href="/news/in-the-news/kids-these-days-get-all-the-luck-literally" class="btn--read-more">Read More</a>
                 </div>
                 <div class="news-2">
-                   <img src="narwal.jpg" alt="narwal">
+                   <img class="news-img" src="/resources/fingerlingrings.jpg" alt="narwal">
                    <P class="news-title">FINGERLINGS NARWHALS COVERED BY PARENTS.COM</P>
                    <P class="news-subtitle">The new Fingerlings Narwhal is the latest toy that will make you fall in love!</P>
                    <div class="articles-grid__item__meta">
                         Jessica Hartshorn on Feb 12 / <a href="https://www.parents.com/news/the-newest-fingerlings-are-narwhals/" target="_blank">Parents.com</a> </div>
-                        <a href="/news/in-the-news/fingerlings-narwhals-covered-by-parentscom" class="btn btn--blank btn--read-more btn--pull-right">Read More</a>
+                        <a href="/news/in-the-news/fingerlings-narwhals-covered-by-parentscom" class="btn--read-more">Read More</a>
                 </div>
                 <div class="news-3">
-                   <img src="handen.jpg" alt="handen">
+                   <img class="news-img" src="/resources/fortune.jpg" alt="handen">
                    <P class="news-title">LUCKY FORTUNE COVERED BY PARENTS</P> 
                    <P class="news-subtitle">This Lucky Fortune Toy Is a Must for Astrology-Loving Kids & Moms. Interview with toy creator, Sydney Wiseman.</P>
                    <div class="articles-grid__item__meta">
                         Jessica Hartshorn on May 26 / <a href="https://www.parents.com/news/lucky-fortune-toy/" target="_blank">Parents.com</a> </div>
-                        <a href="/news/in-the-news/lucky-fortune-covered-by-parents" class="btn btn--blank btn--read-more btn--pull-right">Read More</a>
+                        <a href="/news/in-the-news/lucky-fortune-covered-by-parents" class="btn--read-more">Read More</a>
                    </div>
                 <div class="news-4">
-                  <img src="shot1.jpg" alt="shot1"> 
+                  <img class="news-img" src="/resources/shot1.jpg" alt="shot1"> 
                   <P class="news-title">JUSTJORDAN33: FISH BOWL SLIME CHALLENGE WITH FINGERLINGS MINIS</P>
                   <P class="news-subtitle">You don't want to miss Jordan and Audrey from JustJordan33 as they unbox the new Fingerlings Minis!</P> 
                   <div class="articles-grid__item__meta">
                         May 25 / <a href="https://www.youtube.com/channel/UCHOMvu3axPhTG5zLqrHynig" target="_blank">JustJordan33</a> </div>
-                        <a href="/news/in-the-news/justjordan33-fish-bowl-slime-challenge-with-fingerlings-minis" class="btn btn--blank btn--read-more btn--pull-right">Read More</a>
+                        <a href="/news/in-the-news/justjordan33-fish-bowl-slime-challenge-with-fingerlings-minis" class="btn--read-more">Read More</a>
                     </div>
                   <div class="news-5">
-                  <img src="muts.jpg" alt="muts">  
+                  <img class="news-img" src="/resources/hats.jpg" alt="muts">  
                   <P class="news-title">PRINCESS TOYSREVIEW FINDS FINGERLINGS MINIS IN CUPCAKES??!!</P>
                   <P class="news-subtitle">Check out Princess ToysReview's Fingerlings Minis themed party featuring cupcake bashing. You don't want to miss it.</P>
                   <div class="articles-grid__item__meta">
                         May 25 / <a href="https://youtu.be/rOygMIwbGjI" target="_blank">Princess ToysReview</a> </div>
-                        <a href="/news/in-the-news/princess-toysreview-finds-fingerlings-minis-in-cupcakes" class="btn btn--blank btn--read-more btn--pull-right">Read More</a>
+                        <a href="/news/in-the-news/princess-toysreview-finds-fingerlings-minis-in-cupcakes" class="btn--read-more">Read More</a>
                   </div>
                 <div class="view-all-news">
                    <button class="view-all-news-button">VIEW ALL NEWS</button> 
@@ -568,7 +725,7 @@
         <footer class="footer">
         <div class="leftf">
             <div class="leftf-1">
-                <img class="footerlogo" src="logowhite-2.svg" alt="logo">
+                <img class="footerlogo" src="/resources/logo.inline.gray.svg" alt="logo">
                 <a href="https://wowwee.com/where-to-buy"><button class="button-wtb" type="button">Where to buy</button></a>
                 </div>
                 
@@ -587,10 +744,10 @@
             <div class="rightf-1"><p>WANT WOWWEE UPDATES AND OFFERS?</p></div>
             <div class="rightf-2"><p>We'll send you WowWee news, product announcements and special offers.</p></div>
             <div class="rightf-3">
-                <div><input type="email" name="email" placeholder="Your email address" class="mail-signup-input__field"></div>
-                <div><button class="mail-signup-input__button" type="submit">Sign Up</button></div>
+                <div class="rightf-email"><input type="email" name="email" placeholder="Your email address" class="mail-signup-input__field"></div>
+                <div class="rightf-input"><button class="mail-signup-input__button" type="submit">Sign Up</button></div>
             </div>
-            <div>
+            <div class="rightf-checkbox">
                 <label class="agecheck"><input type="checkbox" name="allowed_age" value="1">
                         &nbsp;&nbsp;&nbsp;I am over 13 years old
                 </label>
