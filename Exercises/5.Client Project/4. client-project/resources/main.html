@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../resources/CSS/main.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Client project</h2>
+
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#home">Dashboard</a></li>
+            <li><a data-toggle="tab" href="#menu1">Download</a></li>
+            <li><a data-toggle="tab" href="#menu2">Upload</a></li>
+        </ul>
+
+        <div class="tab-content">
+
+            <div id="home" class="tab-pane fade in active">
+                <!--Modals Mitch-->
+
+                <button type="button" class="button black" data-toggle="modal" data-target="#modal">Clique Moi
+                    D:</button>
+
+                <div id="modal" class="modal fade" role="dialog">
+                    <div class="modal-dialog">
+
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3 class="modal-title">Je suis un Modal hohon, baguette</h3>
+                            </div>
+                            <div class="modal-body">
+                                <p>Parlez vous Francaise?</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Proche</button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!--Modal 2 Mitch-->
+
+                <button type="button" class="button black" data-toggle="modal" data-target="#mymodal">
+                    Mexicans
+                </button>
+
+                <div class="modal fade" id="mymodal">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3> Laurens , Luna , Mitchell</h3>
+                            </div>
+                            <div class="modal-body">
+                                <p>We make America great again</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Build Wall</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!--Message Modal(3)-->
+
+                <button type="button" class="button black" data-toggle="modal" data-target="#exampleModal"
+                    data-whatever="@mdo">Send Direct Message</button>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Use this Modal to be able to send a
+                                    message.</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form>
+                                    <div class="form-group">
+                                        <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                        <input type="text" class="form-control" id="recipient-name">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message-text" class="col-form-label">Message:</label>
+                                        <textarea class="form-control" id="message-text"></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Send message</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Modal 4 Mitch-->
+
+                <button id="modalActivate" type="button" class="button black" data-toggle="modal"
+                    data-target="#urgentchanges">
+                    Urgent changes
+                </button>
+
+                <div class="modal fade bottom" id="urgentchanges" tabindex="-1" role="dialog"
+                    aria-labelledby="urgentchanges" aria-hidden="true">
+                    <div class="modal-dialog modal-sm modal-frame modal-bottom" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="urgentchanges">Urgent changes to be made</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                I'm going trough changes
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Netflix</button>
+                                <button type="button" class="btn btn-primary">Big Mouth</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Modal 5 Mitch-->
+
+                <button type="button" class="button black" data-toggle="modal" data-target="#modal5">
+                    Modal number 5
+                </button>
+
+                <div class="modal fade" id="modal5">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3> Title</h3>
+                            </div>
+                            <div class="modal-body">
+                                <p>Some text here.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!--model 6 Mitch-->
+
+                <button type="button" class="button black" data-toggle="modal" data-target="#modal6">
+                    Modal number 6
+                </button>
+
+                <div class="modal fade" id="modal6">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3> Title</h3>
+                            </div>
+                            <div class="modal-body">
+                                <p>Some text here.</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!--Model 7 Mitch-->
+
+                <button type="button" class="button black" data-toggle="modal" data-target="#modal7">
+                    Modal number 7
+                </button>
+
+                <div class="modal fade" id="modal7">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3>Title</h3>
+                            </div>
+                            <div class="modal-body">
+                                <p>Some text here</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!--Modal 8 Mitch-->
+
+                <button type="button" class="button black" data-toggle="modal" data-target="#modal8">
+                    Modal number 8
+                </button>
+
+                <div class="modal fade" id="modal8">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3> Title</h3>
+                            </div>
+                            <div class="modal-body">
+                                <p>Some text here</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <!--Modal 9 Mitch-->
+
+                <button type="button" class="button black" data-toggle="modal" data-target="#modal8">
+                    Modal number 9
+                </button>
+
+                <div class="modal fade" id="modal9">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3> Title</h3>
+                            </div>
+                            <div class="modal-body">
+                                <p>Some text here</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="menu1" class="tab-pane fade">
+
+                <!-- -------------------------------------------------------------------------------------DOWNLOAD -->
+                <div class="flex-container">
+                    <div class="column">
+                        <h2>Campuses</h2>
+                        <!------------------------------------------------------------------------- CAMPUSES -->
+                        <button class="accordion">Antwerpen</button>
+                        <div class="panel">
+                        </div>
+                        <button class="accordion">Brussel</button>
+                        <div class="panel"></div>
+
+                        <button class="accordion">Charleroi</button>
+                        <div class="panel"></div>
+
+                        <button class="accordion">Genk</button>
+
+                        <!-------------------------------------------------------------------- GROUPS -->
+
+                        <div class="panel">
+                            <button onclick="collapse()" id='btnEas' class="btn-select">Easley</button>
+                            <div class="panel"></div>
+                            <div class="btn-select">Hopper</div>
+                            <div class="panel"></div>
+                        </div>
+                        <button class="accordion">Gent</button>
+                        <div class="panel"></div>
+
+                    </div>
+                    <div class="column-scroll">
+                        <!------------------------------------------------------------------------- EASLEY TAB 2 -->
+                        <div class="wrapper">
+                            <h2>- Easley</h2>
+                        </div>
+                        <div id="names" class="wrapper">
+                            <div class="name">
+                                <input type="checkbox" class="check" id="checkAll">
+                                <label for="">Check All</label>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                Aldo
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                Axel
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                Jing
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                Kajetan
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                Katrien
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                Korneel
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                Kris
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                Laurens
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                Luna
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                Mansur
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                Mitchell
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                Sean
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                Zeger
+                            </div>
+                        </div>
+                        <h2>- Hopper</h2>
+                        <div id="names" class="wrapper">
+                            <div class="name">
+                                <input type="checkbox">
+                                <label for="">Check All</label>
+                            </div>
+                            <div class=" name">
+                                <input type="checkbox" class="check2" id="Genk">
+                                Angel
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check2" id="Genk">
+                                Ben
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check2" id="Genk">
+                                Ben2
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h2>Profile</h2>
+                         <!--Profile edit Modal-->
+        <button type="button" class="button black edit" data-toggle="modal" data-target="#modalprofile">
+                edit
+                </button>
+                
+                     <div class="modal fade" id="modalprofile">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                 <p> Profile</p>
+                                </div>
+                                <div class="modal-body">
+                                        <div class="container">
+                                                <div class="row m-y-2">
+                                                    <!-- edit form column -->
+                                                <div class="col-lg-4 text-lg-center">
+                                                        <h2>Edit Profile</h2>
+                                                    </div>
+                                                    <div class="col-lg-2 pull-lg-2 text-xs-center">
+                                                      <div class="form-group">
+                                                          <label for="img-upload">Upload image</label>
+                                                          <input type='file' id="imgInp" />
+                                                          <div class="perfection"><img id="blah" src="#" alt="" /></div>
+                                                          </div>
+                                                            </label>
+                                                    </div>
+                
+                                                    <div class="col-lg-2">
+                                                        <div class="alert alert-info alert-dismissable"> <a class="panel-close close" data-dismiss="alert">×</a>
+                                                            
+                                                             <p style="color: red">Missing documents :</p>
+                                                             <p style="color: black">-Absence notes.</p>
+                                                             
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-8 push-lg-4 personal-info">
+                                                         <form role="form">
+                                                            <div class="form-group row">
+                                                                <label class="col-lg-3 col-form-label form-control-label">First name</label>
+                                                                <div class="col-lg-9">
+                                                                    <input class="form-control" type="text" value="Aldo" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label class="col-lg-3 col-form-label form-control-label">Last name</label>
+                                                                <div class="col-lg-9">
+                                                                    <input class="form-control" type="text" value="Polo Jr." />
+                                                                </div>
+                
+                </div>
+                <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Email</label>
+                <div class="col-lg-9">
+                <input class="form-control" type="email" value="AldoPoloJr@gmail.com" />
+                </div>
+                </div>
+                <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Company</label>
+                <div class="col-lg-9">
+                <input class="form-control" type="text" value="BeCode" />
+                </div>
+                </div>
+                <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Website</label>
+                <div class="col-lg-9">
+                <input class="form-control" type="url" value="AldoPoloJR.be" />
+                </div>
+                </div>
+                <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Address</label>
+                <div class="col-lg-9">
+                <input class="form-control" type="text" value="" placeholder="Aldostreet" />
+                </div>
+                </div>
+                <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label"></label>
+                <div class="col-lg-6">
+                <input class="form-control" type="text" value="" placeholder="Arkham City" />
+                </div>
+                <div class="col-lg-3">
+                <input class="form-control" type="text" value="" placeholder="'Muricah!'" />
+                </div>
+                </div>
+                <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Time Zone</label>
+                <div class="col-lg-9">
+                <select id="user_time_zone" class="form-control" size="0">
+                
+                <option value="Portugal">Further-western European Time</option>
+                <option value="Iceland">Western European Time</option>
+                <option value="Europe">Central European Time </option>
+                <option value="Russia">Eastern European Time</option>
+                <option value="Western Russia">Further-eastern European Time </option>
+                <option value="Central Time (US & Canada)"
+                selected="selected">(GMT-06:00) Central Time (US & Canada)</option>
+                <option value="Eastern Time (US & Canada)">(GMT-05:00) Eastern Time (US & Canada)</option>
+                <option value="Indiana (East)">(GMT-05:00) Indiana (East)</option>
+                </select>
+                </div>
+                </div>
+                <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Username</label>
+                <div class="col-lg-9">
+                <input class="form-control" type="text" value="AldoPoloJR" />
+                </div>
+                </div>
+                <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Password</label>
+                <div class="col-lg-9">
+                <input class="form-control" type="password" value="11111122333" />
+                </div>
+                </div>
+                <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Confirm password</label>
+                <div class="col-lg-9">
+                <input class="form-control" type="password" value="11111122333" />
+                </div>
+                </div>
+                <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label"></label>
+                <div class="col-lg-9">
+                <input type="reset" class="button black" value="Cancel" />
+                <input type="button" class="btn btn-primary" value="Save Changes" />
+                
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                   
+                                                </div>
+                                            </div>
+                                            <hr />
+                
+                
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="button black" data-dismiss="modal">Close</button>
+                </div>
+                
+                            </div>
+                   
+                        </div>
+                     </div>
+                        <div class="profile-name">Aldo</div>
+                        <div class="profile-img"></div>
+                        <div class="documents-title">Absences</div>
+                        <div class="doc red">no file uploaded</div>
+                        <div class="documents-title">Contracts</div>
+                        <a href class="doc">Name_Learning_contract.docx</a>
+                        <div class="documents-title">Time Sheets</div>
+                        <a href class="doc">Name_TimeSheet_sept.xlsx</a>
+                        <a href class="doc">Name_TimeSheet_oct.xlsx</a>
+                    </div>
+                </div>
+            </div>
+            <!-- ----------------------------------------------------------------------------->
+            <div id="menu2" class="tab-pane fade">
+                <div class="flex-container">
+                    <div class="column">
+                        <h2>Campuses</h2>
+                        <!------------------------------------------------------------------------- CAMPUSES -->
+                        <button class="accordion">Antwerpen</button>
+                        <div class="panel">
+                        </div>
+                        <button class="accordion">Brussel</button>
+                        <div class="panel"></div>
+
+                        <button class="accordion">Charleroi</button>
+                        <div class="panel"></div>
+
+                        <button class="accordion">Genk</button>
+
+                        <!-------------------------------------------------------------------- GROUPS -->
+
+                        <div class="panel">
+                            <button onclick="collapse()" id='btnEas' class="btn-select">Easley</button>
+                            <div class="panel"></div>
+                            <div class="btn-select">Hopper</div>
+                            <div class="panel"></div>
+                        </div>
+                        <button class="accordion">Gent</button>
+                        <div class="panel"></div>
+
+                    </div>
+                    <div id="downEas" class="column">
+                        <!------------------------------------------------------------------------- EASLEY TAB 2 -->
+                        <div class="wrapper">
+                            <h2>Easley</h2>
+                        </div>
+                        <div id="names" class="wrapper">
+                            <div class="name">
+                                <input type="checkbox" class="check" id="checkAll">
+                                <label for="">Check All</label>
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                Aldo
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                Axel
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                Jing
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                Kajetan
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                Katrien
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                Korneel
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                Kris
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                Laurens
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                Luna
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                Mansur
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                Mitchell
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                Sean
+                            </div>
+                            <div class="name">
+                                <input type="checkbox" class="check" id="Genk" onclick="myFunction()">
+                                Zeger
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h2>Profile</h2>
+                         <!--Profile edit Modal-->
+        <button type="button" class="button black edit" data-toggle="modal" data-target="#modalprofile">
+                edit
+                </button>
+                
+                     <div class="modal fade" id="modalprofile">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                 <p> Profile</p>
+                                </div>
+                                <div class="modal-body">
+                                        <div class="container">
+                                                <div class="row m-y-2">
+                                                    <!-- edit form column -->
+                                                <div class="col-lg-4 text-lg-center">
+                                                        <h2>Edit Profile</h2>
+                                                    </div>
+                                                    <div class="col-lg-2 pull-lg-2 text-xs-center">
+                                                      <div class="form-group">
+                                                          <label for="img-upload">Upload image</label>
+                                                          <input type='file' id="imgInp" />
+                                                          <div class="perfection"><img id="blah" src="#" alt="" /></div>
+                                                          </div>
+                                                            </label>
+                                                    </div>
+                
+                                                    <div class="col-lg-2">
+                                                        <div class="alert alert-info alert-dismissable"> <a class="panel-close close" data-dismiss="alert">×</a>
+                                                            
+                                                             <p style="color: red">Missing documents :</p>
+                                                             <p style="color: black">-Absence notes.</p>
+                                                             
+                                                            
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-8 push-lg-4 personal-info">
+                                                         <form role="form">
+                                                            <div class="form-group row">
+                                                                <label class="col-lg-3 col-form-label form-control-label">First name</label>
+                                                                <div class="col-lg-9">
+                                                                    <input class="form-control" type="text" value="Aldo" />
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label class="col-lg-3 col-form-label form-control-label">Last name</label>
+                                                                <div class="col-lg-9">
+                                                                    <input class="form-control" type="text" value="Polo Jr." />
+                                                                </div>
+                
+                </div>
+                <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Email</label>
+                <div class="col-lg-9">
+                <input class="form-control" type="email" value="AldoPoloJr@gmail.com" />
+                </div>
+                </div>
+                <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Company</label>
+                <div class="col-lg-9">
+                <input class="form-control" type="text" value="BeCode" />
+                </div>
+                </div>
+                <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Website</label>
+                <div class="col-lg-9">
+                <input class="form-control" type="url" value="AldoPoloJR.be" />
+                </div>
+                </div>
+                <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Address</label>
+                <div class="col-lg-9">
+                <input class="form-control" type="text" value="" placeholder="Aldostreet" />
+                </div>
+                </div>
+                <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label"></label>
+                <div class="col-lg-6">
+                <input class="form-control" type="text" value="" placeholder="Arkham City" />
+                </div>
+                <div class="col-lg-3">
+                <input class="form-control" type="text" value="" placeholder="'Muricah!'" />
+                </div>
+                </div>
+                <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Time Zone</label>
+                <div class="col-lg-9">
+                <select id="user_time_zone" class="form-control" size="0">
+                
+                <option value="Portugal">Further-western European Time</option>
+                <option value="Iceland">Western European Time</option>
+                <option value="Europe">Central European Time </option>
+                <option value="Russia">Eastern European Time</option>
+                <option value="Western Russia">Further-eastern European Time </option>
+                <option value="Central Time (US & Canada)"
+                selected="selected">(GMT-06:00) Central Time (US & Canada)</option>
+                <option value="Eastern Time (US & Canada)">(GMT-05:00) Eastern Time (US & Canada)</option>
+                <option value="Indiana (East)">(GMT-05:00) Indiana (East)</option>
+                </select>
+                </div>
+                </div>
+                <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Username</label>
+                <div class="col-lg-9">
+                <input class="form-control" type="text" value="AldoPoloJR" />
+                </div>
+                </div>
+                <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Password</label>
+                <div class="col-lg-9">
+                <input class="form-control" type="password" value="11111122333" />
+                </div>
+                </div>
+                <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label">Confirm password</label>
+                <div class="col-lg-9">
+                <input class="form-control" type="password" value="11111122333" />
+                </div>
+                </div>
+                <div class="form-group row">
+                <label class="col-lg-3 col-form-label form-control-label"></label>
+                <div class="col-lg-9">
+                <input type="reset" class="button black" value="Cancel" />
+                <input type="button" class="btn btn-primary" value="Save Changes" />
+                
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                   
+                                                </div>
+                                            </div>
+                                            <hr />
+                
+                
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="button black" data-dismiss="modal">Close</button>
+                </div>
+                
+                            </div>
+                   
+                        </div>
+                     </div>
+                        <div class="profile-name">Aldo</div>
+                        <div class="profile-img"></div>
+                        <div class="documents-title">Absences</div>
+                        <div class="doc red">no file uploaded</div>
+                        <div class="documents-title">Contracts</div>
+                        <a href class="doc">Name_Learning_contract.docx</a>
+                        <div class="documents-title">Time Sheets</div>
+                        <a href class="doc">Name_TimeSheet_sept.xlsx</a>
+                        <a href class="doc">Name_TimeSheet_oct.xlsx</a>
+                    </div>
+                </div>
+            </div>
+
+
+</body>
+<script>
+    $("#checkAll").click(function () {
+        $(".check").prop('checked', $(this).prop('checked'));
+    });
+    $('option').mousedown(function (e) {
+        e.preventDefault();
+        $(this).prop('selected', $(this).prop('selected') ? false : true);
+        return false;
+    });
+    // --------------------------------
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+</script>
+
+</html>
